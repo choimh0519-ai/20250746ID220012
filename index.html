@@ -3,76 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20250746최명현 홈페이지</title>
+    <title>20250746 최명현 홈페이지</title>
     <style>
-        /* 간단한 디자인 스타일링 */
+        /* 깔끔하고 현대적인 웹 디자인 스타일링 */
         body {
-            font-family: 'Pretendard', sans-serif;
-            line-height: 1.6;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.7;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             color: #333;
+            background-color: #fafafa;
         }
         header {
             text-align: center;
-            padding: 50px 0;
-            border-bottom: 1px solid #eee;
+            padding: 60px 0 40px 0;
+            border-bottom: 2px solid #eaeaea;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            color: #111;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
         }
         main {
-            padding: 20px 0;
+            padding: 40px 0;
+        }
+        article {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        article h2 {
+            font-size: 1.4rem;
+            color: #222;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            word-break: keep-all;
+        }
+        .intro-text {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 30px;
         }
         .image-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
+            background: #fcfcfc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #f0f0f0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
         }
         img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            height: 200px; /* 이미지 높이를 통일해 깔끔하게 정렬 */
+            object-fit: cover; /* 이미지가 비율에 맞게 꽉 차도록 설정 */
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
         }
-        article {
-            margin-bottom: 40px;
+        img:hover {
+            transform: scale(1.02);
+        }
+        .image-caption {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .feedback-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #007bff;
+            border-radius: 0 8px 8px 0;
+            margin-top: 30px;
+        }
+        .feedback-section h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #007bff;
+        }
+        .feedback-section ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #555;
+        }
+        .feedback-section li {
+            margin-bottom: 8px;
         }
         footer {
             text-align: center;
-            font-size: 0.8em;
-            color: #888;
-            margin-top: 50px;
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>첫번째 디자인 프로토타입</h1>
-        <p>평소 닫히지 않는 흡연부스의 문을 닫도록 하기 위해 다음과 같은 아이디어를 구상했습니다.</p>
+        <h1>첫 번째 디자인 프로토타입</h1>
+        <p>평소 닫히지 않는 흡연부스의 문을 자동으로 닫도록 유도하기 위해 명화를 활용한 넛지(Nudge) 아이디어를 구상했습니다.</p>
     </header>
 
     <main>
-        <!-- 첫 번째 프로토타입 -->
         <article>
-            <h2>익숙한 명화를 재미있게 재창조해 사람들의 호기심을 자극하고 문을 닫아 그림을 완성하도록 하였습니다.</h2>
-            <p>관찰 결과 사람들의 관심과 반응을 얻었지만 이를 통해 문을 닫는데 까지 이끌지는 못했습니다.</p>
+            <h2>"익숙한 명화를 재미있게 재창조해 사람들의 호기심을 자극하고, 문을 닫아 그림을 완성하도록 유도하다."</h2>
+            <p class="intro-text">실제 설치 후 관찰한 결과, 많은 사람들의 관심과 긍정적인 반응을 얻을 수 있었으나 아쉽게도 시선이 머무는 것에서 그쳤을 뿐 실제 문을 닫는 행동력까지 완벽하게 이끌어내지는 못했습니다.</p>
             
             <div class="image-container">
-                <!-- '산디 내부'를 본인이 올린 사진 파일 이름으로 바꾸세요 -->
-                <img src="산디 내부" alt="흡연실 내부에서 관찰한 모습">
-                <!-- '산디 외부1'를 본인이 올린 사진 파일 이름으로 바꾸세요 -->
-                <img src="산디 외부1" alt="흡연실 외부에서 관찰한 모습">
-                <!-- '산디 외부2'를 본인이 올린 사진 파일 이름으로 바꾸세요 -->
-                <img src="산디 외부2" alt="흡연실 외부에서 관찰한 모습">
-                <p><em>설치 당시 사진입니다.</em></p>
+                <div class="image-grid">
+                    <!-- ⚠️ 중요: 실제 깃허브에 올린 사진 파일명과 확장자(.jpg 등)로 변경하세요 -->
+                    <img src="sandi-inside.jpg" alt="흡연실 내부에서 관찰한 모습">
+                    <img src="sandi-outside1.jpg" alt="흡연실 외부에서 관찰한 모습 1">
+                    <img src="sandi-outside2.jpg" alt="흡연실 외부에서 관찰한 모습 2">
+                </div>
+                <p class="image-caption">사진 설명: 프로토타입 설치 당시 내·외부 관찰 모습</p>
             </div>
 
-            <p>수정사안으로는 다음과 같은 것들이 있을 것 같습니다.<p> 
-            <p>1. 크기를 키우기(현재는 너무 작아 잘 보이지 않습니다.) 2. 손부분을 확대해 강조하고 그림의 완성 뿐 아니라 문 손잡이를 가리켜 의도를 강조하기</p>
+            <!-- 수정 사안을 보기 좋게 리스트 형태로 구조화 -->
+            <div class="feedback-section">
+                <h3>💡 향후 개선 및 수정 사안</h3>
+                <ul>
+                    <li><strong>스케일 확장:</strong> 현재 크기는 다소 작아 시인성이 떨어지므로, 전체적인 크기를 키워 주목도를 높일 필요가 있습니다.</li>
+                    <li><strong>의도 강조:</strong> 명화 속 손 부분을 크게 확대하여 시각적으로 강조하고, 단순히 그림의 완성을 유도하는 것을 넘어 문 손잡이 방향을 자연스럽게 가리키도록 디자인하여 행동 지침(Call to Action)을 명확히 합니다.</li>
+                </ul>
+            </div>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 20250746최명현. All rights reserved.</p>
+        <p>&copy; 2026 최명현 (20250746). All rights reserved.</p>
     </footer>
 
 </body>
