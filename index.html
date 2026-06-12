@@ -74,27 +74,23 @@
             0%   { opacity: 1; pointer-events: auto; }
             100% { opacity: 0; pointer-events: none; }
         }
-        .intro-fig { position: absolute; width: 70%; max-width: 750px; }
+        .intro-fig { position: absolute; width: 46%; max-width: 440px; }
         .intro-fig img {
             width: 100%; height: auto; object-fit: contain;
             border-radius: 0; box-shadow: none;
             transform: none; transition: none;
         }
         .intro-fig img:hover { transform: none; }
-
         #fig-adam {
-            left: -70%;
+            left: -55%;
             animation: slideInAdam 1.6s cubic-bezier(0.22,1,0.36,1) 0.4s forwards;
         }
-        #fig-adam img {
-            object-position: right center;
-        }
         #fig-god {
-            right: -70%;
+            right: -55%;
             animation: slideInGod 1.6s cubic-bezier(0.22,1,0.36,1) 0.4s forwards;
         }
-        @keyframes slideInAdam { 0% { left: -70%; } 100% { left: -15%; } }
-        @keyframes slideInGod  { 0% { right: -70%; } 100% { right: -15%; } }
+        @keyframes slideInAdam { 0% { left: -55%; } 100% { left: 1%; } }
+        @keyframes slideInGod  { 0% { right: -55%; } 100% { right: 1%; } }
         #spark-effect {
             position: absolute; left: 50%; top: 50%;
             transform: translate(-50%, -50%);
@@ -105,8 +101,8 @@
         }
         @keyframes sparkFlash {
             0%   { width: 0px;   height: 0px;   opacity: 0; }
-            40%  { width: 220px; height: 220px; opacity: 1; }
-            100% { width: 100px; height: 100px; opacity: 0; }
+            40%  { width: 160px; height: 160px; opacity: 1; }
+            100% { width: 80px;  height: 80px;  opacity: 0; }
         }
         #skip-hint {
             position: absolute; bottom: 28px; right: 32px;
@@ -168,3 +164,12 @@
                     <li><strong>다른 장소들도 방문해보세요!</strong> 캠퍼스 곳곳 다른 흡연부스에 여러종류의 명화를 설치할 예정입니다. 부스를 방문하시고 명화를 모아보세요!</li>
                 </ul>
             </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 최명현 (20250746). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
